@@ -10,6 +10,5 @@ echo $message
 echo "enter a phone number"
 read phone
 
-regex="^((\+|00)[0-9]{3}|[0-9]{2})([\. -]?[0-9]{2}){4}$"
 
-[[ $phone =~ ^regex$ ]] && echo "matched" || echo "did not match"
+[[ $phone =~ ^((\+|00)[0-9]{3}|[0-9]{2})([\. -]?[0-9]{2}){4}$ ]] && echo "matched" || echo "did not match"
